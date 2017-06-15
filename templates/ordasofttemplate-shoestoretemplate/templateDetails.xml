@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>OrdaSoft Template - Shoe Store Template</name>
+	<creationDate>Creation Date</creationDate>
+	<author>Your name</author>
+	<authorEmail>Your email</authorEmail>
+	<authorUrl>Link to Your website</authorUrl>
+	<copyright>Your copyrights</copyright>
+	<license> </license>
+	<version>2.5.0</version>
+	<description> 
+	<![CDATA[
+	      <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
+	      <br>
+	      <h1 class="temph1">The OS Framework</h1>
+	      <h4 class="temph4">Beautiful Fast & Light joomla framework</h4>
+	      <p class="text_propery">Powerfull admin area allow easy control templeate elements like fonts, logo, colors etc. Fully responsive grid based on Twitter Bootstrap, looking great on all screen sizes and platforms.</p>
+	      <br>
+	      <div id="down_pictures"> 
+		    <a href="http://www.youtube.com/watch?v=KCfAXQ5S6iQ&feature=youtu.be" onclick="window.open('http://www.youtube.com/watch?v=KCfAXQ5S6iQ&feature=youtu.be','OrdaSoft Joomla Template Features','width=635,height=610,left='+(screen.availWidth/2-317.5)+',top='+(screen.availHeight/2-305)+'');return false;" target="_blank"><img style="width:400px; height:306px;" src="../templates/ordasofttemplate-shoestoretemplate/joomla_template_features_video.jpg"/></a>
+		    <div style="clear:both;"></div>
+		    <div class="sepp_div"></div>
+		    <a href="http://ordasoft.com/membership-page.html" target="_blank"><img src="../templates/ordasofttemplate-shoestoretemplate/button_become_member.jpg"/></a> 
+	      </div>
+	]]>
+	</description>
+
+	<files>
+		<folder>admin</folder>
+		<folder>css</folder>
+		<folder>elements</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>javascript</folder>
+		<folder>language</folder>
+		<folder>fonts</folder>
+        <folder>bootstrap</folder>
+
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>button_become_member.jpg</filename>
+		<filename>joomla_template_features_video.jpg</filename>
+		<filename>ordasoft_template_logo.png</filename>
+	</files>
+
+	<positions>
+	  	<position>Search</position>
+		<position>topMenu</position>
+		<position>Top1</position>
+		<position>Top2</position>
+		<position>Top3</position>
+		<position>Top4</position>
+		<position>Mainmenu</position>
+		<position>Breadcrumbs</position>
+		<position>Slideshow</position>
+		<position>Feature1</position>
+		<position>Feature2</position>
+		<position>Feature3</position>
+		<position>SidebarLeft</position>
+		<position>ContentTop1</position>
+		<position>ContentTop2</position>
+		<position>ContentBottom1</position>
+		<position>ContentBottom2</position>
+		<position>SidebarRight</position>
+		<position>location_map</position>
+		<position>social</position>
+		<position>Bottom1</position>
+		<position>Bottom2</position>
+		<position>Bottom3</position>
+		<position>Bottom4</position>
+		<position>footerMenu</position>
+		<position>Footer1</position>
+		<position>Footer2</position>
+		<position>Footer3</position>
+		<position>Footer4</position>
+		<position>Debug</position>
+
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+	</positions>
+
+<config>
+
+	<fields name="params" addfieldpath="/templates/ordasofttemplate-shoestoretemplate/elements">
+ 
+		<fieldset  name="body" type="upload_func" label="Body">
+		  <field name="btlabout" type="btlabout" description="" label="" />
+			<field name="body_color" type="text" label="Body Color:" description="Example: #000000" default="#F9EFE5"></field>
+			<field name="body_background" type="list" label="Body pattern:">
+			<option value="">None</option>
+			<option value="01.png">Stone</option>
+			<option value="02.png">Lines</option>
+			<option value="03.png">Rhombus</option>
+			<option value="04.png">Noise</option>
+			<option value="05.png">Сloth</option>
+			</field>
+		</fieldset>
+
+		<fieldset  name="logo" type="upload_func" label="Logo">
+			<field name="logo_file" type="media" label="Select your logo:"></field>
+			<field name="logo_link" type="text" label="Logo link:"  description="Example: http://www.ordasoft.com" default="index.php"></field>
+			<field name="logo_width" type="text" label="Logo width:" description="Example: 90" default="222"></field>
+			<field name="logo_height" type="text" label="Logo height:" description="Example: 90" default="60"></field>
+		</fieldset>
+
+		<fieldset  name="body_links" type="upload_func" label="Body Links">
+			<field name="body_link_color" type="text" label="Body links color:" description="Example: #000000" default="#FF6E27"></field>
+			<field name="body_link_hover_color" type="text" label="Body links hover color:" description="Example: #000000" default="#E45D1B"></field>
+
+			<field name="body_underline" type="radio" class="btn-group" label="Body links underline:" default="none">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field name="body_hover_underline" type="radio" class="btn-group" label="Body links hover underline:" default="none">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+		</fieldset>
+
+		<fieldset  name="top_menu_link" type="upload_func" label="Top Menu Links">
+			<field name="top_menu_color" type="text" label="Top Menu links color:" description="Example: #000000" default="#363636"></field>
+			<field name="top_menu_hover_color" type="text" label="Top Menu links hover color:" description="Example: #000000" default="#FF6E27"></field>
+
+			<field name="top_menu_underline" type="radio" class="btn-group" label="Top Menu links underline:" default="none">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field name="top_menu_hover_underline" type="radio" class="btn-group" label="Top Menu links hover underline:" default="none">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+		</fieldset>
+
+		<fieldset  name="main_menu_link" type="upload_func" label="Main Menu Links">
+			<field name="main_menu_color" type="text" label="Main Menu links color:" description="Example: #000000" default="#363636"></field>
+			<field name="main_menu_hover_color" type="text" label="Main Menu links hover color:" description="Example: #000000" default="#FF6E27"></field>
+
+			<field name="main_menu_underline" type="radio" class="btn-group" label="Main Menu links underline:" default="none">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field name="main_menu_hover_underline" type="radio" class="btn-group" label="Main Menu links hover underline:" default="none">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+		</fieldset>
+
+		<fieldset  name="footer_menu_link" type="upload_func" label="Footer Menu Links">
+			<field name="menu_footer_color" type="text" label="Footer Menu links color:" description="Example: #000000" default="#363636"></field>
+			<field name="menu_footer_hover_color" type="text" label="Footer Menu links hover color:" description="Example: #000000" default="#FF6E27"></field>
+
+			<field name="menu_footer_underline" type="radio" class="btn-group" label="Footer Menu links underline:" default="none">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field name="menu_footer_hover_underline" type="radio" class="btn-group" label="Footer Menu links hover underline:" default="none">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+		</fieldset>
+
+		<fieldset name="typography" label="Typography">
+
+			<field name="body_font" type="list" label="Body Font:" default="Open Sans">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="links_font" type="list" label="Body Links Font:" default="Open Sans">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="top_menu_font" type="list" label="Top Menu Font:" default="Open Sans">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="main_menu_font" type="list" label="Main Menu Font:" default="Open Sans">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="footer_menu_font" type="list" label="Footer Menu Font:" default="Open Sans">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="h1_font" type="list" label="h1 Font:" default="Oswald">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="h2_font" type="list" label="h2 Font:" default="Oswald">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="h3_font" type="list" label="h3 Font:" default="Oswald">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="h4_font" type="list" label="h4 Font:" default="Open Sans">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="h5_font" type="list" label="h5 Font:" default="Oswald">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="h6_font" type="list" label="h6 Font:" default="Oswald">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+		</fieldset>
+
+		<fieldset name="social_icons" label="Social links">
+			<field name="twitter" type="text" label="Twitter" description="Insert URL here." default="https://twitter.com/#%21/Ordasoft1"></field>
+			<field name="facebook" type="text" label="Facebook" description="Insert URL here." default="http://www.facebook.com/pages/OrdaSoft-Joomla-Extensions-and-Joomla-Templates/193325590717050"></field>
+			<field name="flickr" type="text" label="Flickr" description="Insert URL here." default=""></field>
+			<field name="linkedin" type="text" label="Linked in" description="Insert URL here." default=""></field>
+			<field name="youtube" type="text" label="YouTube" description="Insert URL here." default="http://www.youtube.com/user/ordasoft"></field>
+			<field name="pinterest" type="text" label="Pinterest" description="Insert URL here." default=""></field>
+			<field name="google" type="text" label="Google+" description="Insert URL here." default="https://plus.google.com/104040238756111102561/posts"></field>
+			<field name="dribbble" type="text" label="Dribbble" description="Insert URL here." default=""></field>
+			<field name="vimeo" type="text" label="Vimeo" description="Insert URL here." default=""></field>
+			<field name="instagram" type="text" label="Instagram" description="Insert URL here." default=""></field>
+			<field name="vk" type="text" label="Vk" description="Insert URL here." default=""></field>
+		</fieldset>
+
+		<fieldset name="copyright" label="Copyright">
+			<field name="copyrights" label ="Copyright:" type="editor" width="300" filter="safehtml" />
+		</fieldset>
+
+		<fieldset name="tracking_code" label="Tracking Google Code">
+			<field name="tracking_code" type="textarea" label="Tracking Google Code:" description="Enter your Tracking Google Code in JavaScript tags"></field>
+		</fieldset>
+
+	</fields>
+
+</config>
+
+</extension>

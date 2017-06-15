@@ -1,0 +1,153 @@
+/*
+ * Swiper - Mobile Touch Slider CSS
+ * http://www.idangero.us/sliders/swiper
+ * Vladimir Kharlampidi, The iDangero.us
+ * http://www.idangero.us/
+ * Copyright 2012-2013, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ * Licensed under GPL & MIT
+*/
+.swiper-container {
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	-o-backface-visibility:hidden;
+	backface-visibility:hidden;
+	/* Fix of Webkit flickering */
+	z-index:1;
+}
+.swiper-wrapper {
+	position:relative;
+	width:100%;
+	-webkit-transition-property:-webkit-transform, left, top;
+	-webkit-transition-duration:0s;
+	-webkit-transform:translate3d(0px,0,0);
+	-webkit-transition-timing-function:ease;
+	
+	-moz-transition-property:-moz-transform, left, top;
+	-moz-transition-duration:0s;
+	-moz-transform:translate3d(0px,0,0);
+	-moz-transition-timing-function:ease;
+	
+	-o-transition-property:-o-transform, left, top;
+	-o-transition-duration:0s;
+	-o-transform:translate3d(0px,0,0);
+	-o-transition-timing-function:ease;
+	-o-transform:translate(0px,0px);
+	
+	-ms-transition-property:-ms-transform, left, top;
+	-ms-transition-duration:0s;
+	-ms-transform:translate3d(0px,0,0);
+	-ms-transition-timing-function:ease;
+	
+	transition-property:transform, left, top;
+	transition-duration:0s;
+	transform:translate3d(0px,0,0);
+	transition-timing-function:ease;
+}
+.swiper-free-mode > .swiper-wrapper {
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-timing-function: ease-out;
+	-ms-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	margin: 0 auto;
+}
+.swiper-slide {float: left;}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {-ms-touch-action: pan-y;}
+.swiper-wp8-vertical {-ms-touch-action: pan-x;}
+
+.swiper-slide {
+    text-align: center;
+    position: relative;
+}
+.swiper-slide x`{	
+	max-width: 100%;
+}
+.caption {
+position: absolute;
+left: 0;
+right: 0;
+margin: auto;
+display: inline-block;
+bottom: 0;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.swipe-wrap {
+  position: relative;
+}
+.title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/**
+ * @package OS_Touch_Slider
+ * @subpackage  mod_OS_TouchSlider
+ * @copyright Andrey Kvasnevskiy-OrdaSoft(akbet@mail.ru); Sergey Bunyaev(sergey@bunyaev.ru); Sergey Solovyev(solovyev@solovyev.in.ua)
+ * @Homepage: http: //www.ordasoft.com
+ * @version: 1.0 
+ * @license GNU General Public License version 2 or later; see LICENSE.txt
+ * */
+.touchSlider {position: relative;	margin: 0 auto;}
+.touchSlider.vertical .swiper-slide {cursor: url("images/drag-vertical.png"), default;}
+.touchSlider.horizontal .swiper-slide {cursor: url("images/drag.png"), default;}
+
+.touchSlider.horizontal .arrow-right {background-position: -35px -105px; right:0;top:0;bottom:0;}
+.touchSlider.horizontal .arrow-left {background-position: 0 -105px; left:0;top:0;bottom:0;}
+.touchSlider.horizontal .arrow-right:hover {background-position: -35px -71px;}
+.touchSlider.horizontal .arrow-left:hover {background-position: 0 -71px;}
+
+.touchSlider.vertical .arrow-right {background-position: -35px 0; top:0;right:0;left:0;}
+.touchSlider.vertical .arrow-left {background-position: 0 0; bottom:0;right:0;left:0;}
+.touchSlider.vertical .arrow-right:hover {background-position: -35px -35px;}
+.touchSlider.vertical .arrow-left:hover {background-position: 0 -35px;}
+
+.touchSlider:hover .arrow-right,
+.touchSlider:hover .arrow-left {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+.touchSlider .arrow-right,
+.touchSlider .arrow-left {
+  background-image: url("../images/slider-arrows.png");
+  background-repeat: no-repeat;
+  height: 35px;
+  cursor: pointer;
+  display: none;
+  width: 35px;
+  position: absolute;
+  margin: auto;
+  z-index: 5;
+}
+
+.touchSlider .swiper-pagination-switch.swiper-active-switch {background-position: 0 0;}
+.touchSlider .swiper-pagination-switch {background-position: -14px 0;}
+.touchSlider .swiper-pagination-switch:hover {background-position: -28px 0;}
+
+.touchSlider .pagination {margin: 0;}
+.touchSlider .pagination span {
+  background-image: url("../images/dot-nav.png");
+  background-repeat: no-repeat;
+  height: 14px;
+  width: 14px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  margin-top: 5px;
+  zoom: 1;
+  *display: inline;
+}

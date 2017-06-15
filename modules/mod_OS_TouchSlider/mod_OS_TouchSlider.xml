@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1">
+    <name>OS TouchSlider</name>
+    <author>OrdaSoft</author>
+    <creationDate>June 2013</creationDate>
+    <copyright>OrdaSoft 2013</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>akbet@mail.ru</authorEmail>
+    <authorUrl>http://ordasoft.com</authorUrl>
+    <version>3.1</version>
+    <description><![CDATA[<img style="width:515px;" src="../modules/mod_OS_TouchSlider/images/os_touch_installation_image.png">]]></description>
+        <scriptfile>script.php</scriptfile>
+    <files>
+        <filename module="mod_OS_TouchSlider">mod_OS_TouchSlider.php</filename>
+        <folder>assets</folder>
+        <folder>fields</folder>
+        <folder>helpers</folder>
+        <folder>images</folder>
+        <folder>tmpl</folder>
+        <folder>file_uploader</folder>
+        <filename>index.html</filename>
+    </files>
+    <config>
+        <fields name="params" addfieldpath="/modules/mod_OS_TouchSlider/fields">
+            <fieldset name="images-manager" label="Uploader">
+                <field name="imagezer" type="imagezer" default="" label="File uploaders and sort" description="File uploaders and sort" />
+            </fieldset>
+            <fieldset name="slideshow_options" label="Slideshow options">
+                <field name="respect_quite" type="radio" default="1" class="btn-group" label="Cut pictures" description="Cut pictures">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="countSlides" type="text" size="9" default="1" label="Images per slide" description="Quantity of images displayed per slide. Must be less then images in the slider" />
+                <field name="width" type="text" class="number slideoptions" size="9" default="300" label="Width" description="You can choose images width in pixels or percentage.
+                        Enter % after numbers if you want width in percentage or enter numbers with out any symbols if you want width in pixels"/>
+                 <field name="height" type="text" class="number slideoptions" size="9" default="200" label="Height" description="Images height in pixels." />
+                <field name="type" type="radio" default="horizontal" class="btn-group" label="Slideshow scrolling" description="Select slideshow scrolling type">
+                    <option value="horizontal">Horizontal</option>
+                    <option value="vertical">Vertical</option>
+                </field>
+                <field name="arrows" type="radio" default="1" class="btn-group" label="Show navigation arrows" description="Show navigation arrows">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="dots" type="radio" default="1" class="btn-group" label="Show navigation dots" description="Show navigation dots">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="autoplay" type="radio" default="1" class="btn-group" label="Auto play" description="Auto play">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="time-interval" type="text" class="number slideoptions" size="9" default="500" label="Transition duration" description="Transition duration have to less then 'Pause duration'" />
+                <field name="effect-speed" type="text" class="number slideoptions" size="9" default="3500" label="Pause duration" description="Pause duration have to more then 'Transition duration'" />
+            </fieldset>
+            <fieldset name="advanced" label="Advanced options">
+                <field name="jquery-local" type="radio" class="btn-group" default="0" label="jQuery local" description="jQuery local">
+                    <option value="1">On</option>
+                    <option value="0">Off</option>
+                </field>
+                <field name="jquery" type="radio" class="btn-group" default="0" label="jQuery" description="jQuery">
+                    <option value="1">On</option>
+                    <option value="0">Off</option>
+                </field>
+                <field name="no-conflict" type="radio" class="btn-group" default="0" label="jQuery.noConflict" description="jQuery.noConflict">
+                    <option value="1">On</option>
+                    <option value="0">Off</option>
+                </field>
+                <field name="sufix" type="text" size="9" default="ordasoft" label="Module class sufix" description="Module class sufix" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
